@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 1);
+}
+h1 {
+    color: #ff6b6b;
+    text-align: center;
+}
+.toy-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.toy-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    position: relative;
+}
+.toy-card:hover {
+    transform: scale(1.05);
+}
+.toy-image {
+    width: 100%;
+    height: 120px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.toy-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.toy-count, .toy-usage {
+    color: #595858;
+    font-size: 14px;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+button.decrease {
+    background-color: #f44336;
+}
+.neural-status {
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
+.popular {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: gold;
+    color: black;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.recommendation {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.recommendation ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+}
+.add-toy {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.add-toy input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.toy-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.toy-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

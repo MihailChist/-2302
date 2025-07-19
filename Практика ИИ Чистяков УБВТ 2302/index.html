@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет игрушек в детском саду</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Учет игрушек в детском саду</h1>
+    
+    <div class="neural-status" id="neuralStatus">
+        Нейросеть анализирует популярность игрушек...
+    </div>
+    
+    <div class="recommendation" id="recommendation"></div>
+    
+    <div class="add-toy">
+        <h3>Добавить новую игрушку</h3>
+        <form id="addToyForm">
+            <input type="text" id="toyName" placeholder="Название игрушки" required>
+            <input type="number" id="toyCount" placeholder="Количество" min="1" required>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <form id="addToyForm">
+    <input type="text" id="toyName" placeholder="Название игрушки" required>
+    <input type="number" id="toyCount" placeholder="Количество" min="1" required>
+    <input type="file" id="toyImage" accept="image/*">
+    <button type="submit">Добавить</button>
+</form>
+    
+    <div class="toy-list" id="toyList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
